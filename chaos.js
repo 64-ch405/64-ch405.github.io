@@ -9,10 +9,10 @@ function generateRandomBinaryString(length) {
 
 // Function to update the document title
 function updateTitle() {
-    const randomBinaryStream = generateRandomBinaryString(128); // 16 bytes (128 bits)
+    const randomBinaryStream = generateRandomBinaryString(64); // 8 bytes (64 bits)
     document.title = `Binary Chaos [${randomBinaryStream}]`;
 }
 
 // Set the initial title and update it every few seconds
 updateTitle();
-setInterval(updateTitle, 3000);
+setInterval(updateTitle, 750);
